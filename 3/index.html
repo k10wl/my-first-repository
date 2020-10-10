@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/8c028d1730.js" crossorigin="anonymous"></script>
+
+
+
+	<style>
+body{
+	font-family: sans-serif;
+}
+
+.bg{
+	position: relative;
+	width: 260px;
+	height: 330px;
+	padding: 20px;
+	background-color: #ffffff;
+	border:1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0 0 7px grey;
+}
+
+.sit{
+	text-align: center;
+	line-height: 0rem;
+	font-size:1.5rem;
+}
+
+
+.inpt{
+	padding-top: 15px;
+	position: relative;
+}
+
+input[type="password"], input[type="text"]{
+	width: 100%;
+	border-collapse: collapse;
+	border:none;
+	border-bottom: 1px solid grey;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+input:focus { 
+    outline: none !important;
+    border-color: white;
+    border-bottom: 1px solid #002c67;
+}
+
+.fp{
+	position: absolute;
+	right: 0;
+	padding: 15px 0;
+	color: #00a6ff;
+	font-size: 0.7rem;
+	text-decoration: none;
+}
+
+.bn{
+	width: 100%;
+	background: rgb(0,166,255);
+	background: linear-gradient(90deg, rgba(0,166,255,1) 0%, rgba(0,44,103,1) 100%);
+	border-collapse: collapse;
+	outline: none;
+	border:none;
+	border-radius: 30px;
+	padding: 10px 0;
+	text-align: center;
+	color: white;
+	margin-top: 70px; 
+}
+
+.ors{
+	text-align: center;
+}
+
+form.soc{
+	display: flex;
+	margin: 0 15px;
+}
+.soc > button{
+	color: #00a6ff;
+	padding: 5px 0;
+	width: 70px;
+	justify-content: center;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	margin: 0 auto;
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 2px 5px 0px rgba(158,158,158,1);
+}
+
+	</style>
+</head>
+
+<body>
+
+
+<div class="bg">
+	<h1 class="sit">Sign in</h1>
+	<form class=inpt>
+		<input type="text" name="email" placeholder="Your email" required>
+		<input type="password" name="email" placeholder="Your password" required>
+		<a class="fp" href="">Forgot Password?</a>
+		<button class="bn">SING IN</button>
+	</form>
+
+		<p class="ors">or Sign in with:</p>
+		<form class="soc">
+			<button>
+					<i class="fab fa-facebook-f"></i>
+			</button>
+			<button>
+					<i class="fab fa-twitter"></i>
+			</button>
+			<button>
+					<i class="fab fa-google-plus-g"></i>
+			</button>
+		</form>
+</div>
+
+
+</body>
+</html>
